@@ -1,15 +1,13 @@
 import React from 'react';
 
-//function App() {
-//  return <div>Hello world</div>;
-//}
-
 function App() {
-  return React.createElement(
-    'h1',
-    null,
-    'Hello World'
-  );
+  return (
+    <React.Fragment>
+      <label htmlFor="bar">bar</label>
+      <input type="text" onChange={() => {console.log("I am clicked")}} />
+    </React.Fragment>
+  )
 }
+
 
 export default App;
